@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    background-color: #F2F2F2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_wrapper {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 0px;
+    z-index: 2;
+}
+
+.header_btn-link {
+    background-color: #030303;
+    padding: 8px 28px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #FFF7F0;
+    border-radius: 28px;
+}
+
+.site-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+
+.hero-section {
+    margin-bottom: 32px;
+    margin-right: 16px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+    background: linear-gradient(to right, #EC008C 0%, #0070F3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section-description {
+    font-size: 1rem;
+    color: #7A746E;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+    padding-right: 29px;
+    padding-left: 29px;
+}
+
+.service-section {
+    margin-right: 15px;
+    margin-bottom: 100px;
+    margin-left: 15px;
+}
+
+.grid-tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 180px);
+    gap: 25px;
+    grid-template-areas: 
+    "tile1 tile1"
+    "tile1 tile1"
+    "tile2 tile3"
+    "tile4 tile4"
+    "tile5 tile5"
+    "tile6 tile6";
+}
+
+.grid-tiles > * {
+    position: relative;
+}
+
+.service-block-icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.service-subtitle {
+    position: absolute;
+    top: 128px;
+    left: 24px;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.grid-tile-1 .service-subtitle {
+    position: absolute;
+    top: 320px;
+    left: 24px;
+}
+
+
+.grid-tile-1 {
+    grid-area: tile1;
+    background-color: #755CDE;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+
+.grid-tile-2 {
+    grid-area: tile2;
+    background-color: #F6A560;
+    border-radius: 8px;
+}
+
+.grid-tile-3 {
+    grid-area: tile3;
+    background-color: #F39E9E;
+    border-radius: 8px;
+}
+
+.grid-tile-4 {
+    grid-area: tile4;
+    background-color: #EB7565;
+    border-radius: 8px;
+}
+
+.grid-tile-5 {
+    grid-area: tile5;
+    background-color: #61C4B7;
+    border-radius: 8px;
+}
+
+.grid-tile-6 {
+    grid-area: tile6;
+    background-color: #552049;
+    border-radius: 8px;
+}
+
+.about-amy-section {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.amy-portrait {
+    max-width: 445px;
+}
+
+.amy-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.story-callout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-callout-title {
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 32.76px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.story-callout-description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px;
+    color: #7A746E;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.story-callout-link {
+    font-size: 0.875rem;
+    padding: 8px 28px;
+    color: #FFF7F0;
+    background: #EB7565;
+    border-radius: 28px;
+}
+
+.hero-carousel-section {
+    text-align: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.hero-carousel-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    background: linear-gradient(to right, #EC008C 0%, #0070F3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-carousel-wrapper {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-bottom: 56px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.hero-carousel-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.slide-container {
+    width: 270px;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.previous-slide, .next-slide {
+    background-color: #030303;
+    padding: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.previous-slide {
+    margin-right: 16px;
+}
+
+.previous-slide:hover, .next-slide:hover {
+    background-color: #755CDE;
+}
+
+
+
+.booking-section {
+    padding-right: 16px;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    
+}
+
+.contact {
+    background-color:#755CDE;
+    padding-top: 49px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contact-inner-title {
+    font-size: 1.625rem;
+    color: #FFF7F0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contact-inner-description {
+    font-size: 1rem;
+    color: #FFF7F0;
+    line-height: 26px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contact-inner-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-inner-cta-button {
+    font-size: 0.875rem;
+    color: #755CDE;
+    padding: 8px 28px;
+    background-color:#FFF7F0;
+    border-radius: 28px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+@media screen and (min-width:680px) {
+    .header_wrapper {
+        margin-bottom: 64px;
+    }
+
+    .header {
+        padding-top: 34px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .header_btn-link {
+        padding: 14px 45px;
+    }
+
+    .hero-section {
+        margin-right: 39.5px;
+        margin-bottom: 64px;
+        margin-left: 39.5px;
+    }
+
+    .hero-carousel-title {
+        font-size: 2.75rem;
+    }
+
+    .hero-section-description {
+        font-size: 1.125rem;
+        line-height: 28px;
+        padding-right: 58.5px;
+        padding-left: 58.5px;
+        max-width: 730px;
+    }
+
+    .service-section {
+        padding-right: 39px;
+        margin-bottom: 120px;
+        padding-left: 39px;
+    }
+
+    .grid-tiles {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-template-areas: 
+        "tile1 tile1 tile2 tile3"
+        "tile1 tile1 tile4 tile4"
+        "tile5 tile5 tile6 tile6";
+    }
+
+    .about-amy-section {
+        flex-direction: row;
+        padding-right: 40px;
+        margin-bottom: 120px;
+        padding-left: 39px;
+    }
+
+    .amy-portrait {
+        margin-right: 19px;
+    }
+
+    .amy-img {
+        margin-bottom: 0px;
+    }
+
+    .story-callout {
+        max-width: 540px;
+    }
+
+    .story-callout-title {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .story-callout-description {
+        font-size: 1.125rem;
+        text-align: left;
+    }
+
+    .story-callout-link {
+        font-size: 1rem;
+        padding: 14px 45px;
+        display: block;
+        align-self: flex-start;
+    }
+
+    .hero-carousel-title {
+        font-size: 2rem;
+        margin-bottom: 56px;
+    }
+
+    .slide-container {
+        width: 540px;
+    }
+
+    .booking-section {
+        padding-right: 39px;
+        padding-left: 39px;
+        margin-bottom: 56px;
+    }
+
+    .contact {
+        padding: 56px 75px 64px;
+    }
+
+    .contact-inner-title {
+        font-size: 2rem;
+        margin-bottom: 22px;
+    }
+    
+    .contact-inner-description {
+        margin-bottom: 30px;
+    }
+
+    .contact-inner-cta-button {
+        font-size: 1rem;
+        padding: 14px 45px;
+    }
+
+    .footer {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width:992px) {
+    .header_wrapper {
+        margin-bottom: 68px;
+    }
+
+    .header {
+        padding-top: 34px;
+    }
+
+   .hero-section {
+        margin-bottom: 80px;
+   }
+
+    .hero-section-title {
+        margin-bottom: 23px;
+    }
+
+    .hero-section-description {
+        font-size: 1.125rem;
+        padding-right: 11px;
+        padding-left: 11px;
+    }
+
+    .service-section {
+        margin-bottom: 80px;
+    }
+
+    .grid-tiles {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 180px);
+        grid-template-areas: 
+        "tile1 tile1 tile2 tile3 tile4 tile4"
+        "tile1 tile1 tile5 tile5 tile6 tile6";
+    }
+
+    .amy-portrait {
+        margin-right: 125px;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .hero-section-title {
+        font-size: 3.5rem;
+    }
+
+    .story-callout {
+        align-items: flex-start;
+    }
+
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-inner-title {
+        text-align: left;
+    }
+
+    .contact-inner-description {
+        text-align: left;
+        max-width: 540px;
+    }
+}
